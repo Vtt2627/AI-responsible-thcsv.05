@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <title>AI Responsible</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <h1>Đánh giá sử dụng AI có trách nhiệm</h1>
+
+    <p>
+        Hệ thống giúp học sinh lớp 9 tự đánh giá
+        cách xử lí một số tình huống khi sử dụng AI.
+    </p>
+
+    <!-- Khung nhập mã học sinh -->
+    <div id="startSection">
+        <label>Mã học sinh:</label>
+        <input type="text" id="studentCode">
+        <br><br>
+        <button id="startButton">Bắt đầu đánh giá</button>
+    </div>
+
+    <!-- Khung làm bài đánh giá -->
+    <div id="quiz" style="display: none;">
+        <h2 id="questionNumber"></h2>
+        <p id="questionText"></p>
+        <div id="options"></div>
+        <br>
+        <button id="nextButton">Tiếp tục</button>
+    </div>
+
+    <!-- Khung hiển thị kết quả đánh giá -->
+    <div id="result" style="display: none;">
+        <h2>KẾT QUẢ ĐÁNH GIÁ</h2>
+        <p id="scoreResult"></p>
+        <h3>Các nội dung cần chú ý</h3>
+        <div id="attentionResult"></div>
+        <h3>Khuyến nghị</h3>
+        <div id="recommendationResult"></div>
+    </div>
+
+    <!-- Khung phân tích dữ liệu tổng hợp (Bổ sung theo yêu cầu nghiên cứu) -->
+    <div id="analysisPanel" style="display: none;">
+        <h2>PHÂN TÍCH DỮ LIỆU TẬP THỂ</h2>
+        <p id="totalResults"></p>
+        <p id="averageScore"></p>
+        <h3>Thống kê số lượt cần chú ý theo biểu hiện</h3>
+        <div id="behaviorStatistics"></div>
+    </div>
+
+    <!-- Nhúng đúng thứ tự data.js rồi đến script.js theo hướng dẫn Bước 14 -->
+    <script src="data.js"></script>
+    <script src="script.js"></script>
+</body>
+</html>
